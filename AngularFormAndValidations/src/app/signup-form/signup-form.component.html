@@ -1,0 +1,14 @@
+
+<form #loginform='ngForm' (ngSubmit)='DoLogin(loginform)'>
+  <label for="UserName">User Name</label>&nbsp;&nbsp;
+  <input type="text"  maxlength="20" name="Username" ngModel required>
+  <br><br>
+  <label for ="Regkey" >Reg Key</label> &nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" required maxlength="20" name="Regkey" ngModel>
+   <br><br>
+
+  <label for ="Password" >Pasword</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="password" required maxlength="20" name="password" ngModel> 
+   <br>
+  <button type="submit">Login</button>
+</form>
